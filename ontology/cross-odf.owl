@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://cais.iias.spb.su/ontologies/cross/"
-     xml:base="http://cais.iias.spb.su/ontologies/cross/"
+<rdf:RDF xmlns="http://purl.org/cross-odf/ontology#"
+     xml:base="http://purl.org/cross-odf/ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:cross="http://cais.iias.spb.su/ontologies/cross/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://cais.iias.spb.su/ontologies/cross/">
-        <owl:versionIRI rdf:resource="http://cais.iias.spb.su/ontologies/cross/1.0.0"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:crossodf="http://purl.org/cross-odf/ontology#">
+    <owl:Ontology rdf:about="http://purl.org/cross-odf/ontology#">
+        <owl:versionIRI rdf:resource="http://purl.org/cross-odf/ontology/1.0.0#"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1.0.0</owl:versionInfo>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology to describe main distinguishing features of crowd-based applications. Primary goal of the ontology is to annotate scientific publications with the classes introduced by this ontology to enable semantic search and simple analytical procedures, allowing, in the long run to integrate research in the area of crowd computing.</rdfs:comment>
     </owl:Ontology>
@@ -26,110 +26,110 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/addresses -->
+    <!-- http://purl.org/cross-odf/ontology#addresses -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/addresses">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#addresses">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/causedByTaskType -->
+    <!-- http://purl.org/cross-odf/ontology#causedByTaskType -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/causedByTaskType">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskResultContribution"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#causedByTaskType">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#TaskResultContribution"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/definesContributionType -->
+    <!-- http://purl.org/cross-odf/ontology#definesContributionType -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/definesContributionType">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#definesContributionType">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#ContributionType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/definesProperty -->
+    <!-- http://purl.org/cross-odf/ontology#definesProperty -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/definesProperty">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskProperty"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#definesProperty">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#TaskProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/definesTaskType -->
+    <!-- http://purl.org/cross-odf/ontology#definesTaskType -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/definesTaskType">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#definesTaskType">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/exploitsAbility -->
+    <!-- http://purl.org/cross-odf/ontology#exploitsAbility -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/exploitsAbility">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#exploitsAbility">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#HumanAbility"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/hasConsumer -->
+    <!-- http://purl.org/cross-odf/ontology#hasConsumer -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/hasConsumer">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#hasConsumer">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#Consumer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/hasDomain -->
+    <!-- http://purl.org/cross-odf/ontology#hasDomain -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/hasDomain">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/ProblemDomain"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#hasDomain">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#ProblemDomain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/hasRepresentation -->
+    <!-- http://purl.org/cross-odf/ontology#hasRepresentation -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/hasRepresentation">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#hasRepresentation">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#TaskRepresentation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/implements -->
+    <!-- http://purl.org/cross-odf/ontology#implements -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/implements">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#implements">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#Mechanism"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/problemActivity -->
+    <!-- http://purl.org/cross-odf/ontology#problemActivity -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/problemActivity">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#problemActivity">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#Activity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/requiresAction -->
+    <!-- http://purl.org/cross-odf/ontology#requiresAction -->
 
-    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/requiresAction">
-        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
-        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/cross-odf/ontology#requiresAction">
+        <rdfs:domain rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
+        <rdfs:range rdf:resource="http://purl.org/cross-odf/ontology#HumanAction"/>
     </owl:ObjectProperty>
     
 
@@ -145,140 +145,140 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Activity -->
+    <!-- http://purl.org/cross-odf/ontology#Activity -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Activity"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism -->
+    <!-- http://purl.org/cross-odf/ontology#AdmissionMechanism -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#AdmissionMechanism">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Audial -->
+    <!-- http://purl.org/cross-odf/ontology#Audial -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Audial">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Audial">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#HumanAbility"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Audio -->
+    <!-- http://purl.org/cross-odf/ontology#Audio -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Audio">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Audio">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskRepresentation"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/BadgeSystem -->
+    <!-- http://purl.org/cross-odf/ontology#BadgeSystem -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/BadgeSystem">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SocialPayoff"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#BadgeSystem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#SocialPayoff"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/BusinessOrganization -->
+    <!-- http://purl.org/cross-odf/ontology#BusinessOrganization -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/BusinessOrganization">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#BusinessOrganization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Collect -->
+    <!-- http://purl.org/cross-odf/ontology#Collect -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Collect">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Collect">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Activity"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CommonSense -->
+    <!-- http://purl.org/cross-odf/ontology#CommonSense -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CommonSense">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#CommonSense">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#HumanAbility"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Compare -->
+    <!-- http://purl.org/cross-odf/ontology#Compare -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Compare">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Compare">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mental"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Competitive -->
+    <!-- http://purl.org/cross-odf/ontology#Competitive -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Competitive">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Competitive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#ContributionProcessingMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ConsensusQualityThreshold -->
+    <!-- http://purl.org/cross-odf/ontology#ConsensusQualityThreshold -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ConsensusQualityThreshold">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/QualityThreshold"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ConsensusQualityThreshold">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#QualityThreshold"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Consumer -->
+    <!-- http://purl.org/cross-odf/ontology#Consumer -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Consumer"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism -->
+    <!-- http://purl.org/cross-odf/ontology#ContributionProcessingMechanism -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ContributionProcessingMechanism">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ContributionType -->
+    <!-- http://purl.org/cross-odf/ontology#ContributionType -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ContributionType"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ContributorRankings -->
+    <!-- http://purl.org/cross-odf/ontology#ContributorRankings -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ContributorRankings">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SocialPayoff"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ContributorRankings">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#SocialPayoff"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication -->
+    <!-- http://purl.org/cross-odf/ontology#CrowdBasedApplication -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdcreationApplication -->
+    <!-- http://purl.org/cross-odf/ontology#CrowdcreationApplication -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdcreationApplication">
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#CrowdcreationApplication">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesContributionType"/>
+                        <owl:onProperty rdf:resource="http://purl.org/cross-odf/ontology#definesContributionType"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution"/>
-                                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreewillContribution"/>
+                                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#FreeformTextContribution"/>
+                                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#FreewillContribution"/>
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -290,16 +290,16 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdfundingApplication -->
+    <!-- http://purl.org/cross-odf/ontology#CrowdfundingApplication -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdfundingApplication">
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#CrowdfundingApplication">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesContributionType"/>
-                        <owl:someValuesFrom rdf:resource="http://cais.iias.spb.su/ontologies/cross/MonetaryContribution"/>
+                        <owl:onProperty rdf:resource="http://purl.org/cross-odf/ontology#definesContributionType"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/cross-odf/ontology#MonetaryContribution"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -308,19 +308,19 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdsensingApplication -->
+    <!-- http://purl.org/cross-odf/ontology#CrowdsensingApplication -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdsensingApplication">
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#CrowdsensingApplication">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesTaskType"/>
+                        <owl:onProperty rdf:resource="http://purl.org/cross-odf/ontology#definesTaskType"/>
                         <owl:someValuesFrom>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesProperty"/>
-                                <owl:someValuesFrom rdf:resource="http://cais.iias.spb.su/ontologies/cross/SpatialProperty"/>
+                                <owl:onProperty rdf:resource="http://purl.org/cross-odf/ontology#definesProperty"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/cross-odf/ontology#SpatialProperty"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -331,422 +331,422 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/DelayedPayoff -->
+    <!-- http://purl.org/cross-odf/ontology#DelayedPayoff -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/DelayedPayoff">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
-        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/ImmediatePayoff"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#DelayedPayoff">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Monetary"/>
+        <owl:disjointWith rdf:resource="http://purl.org/cross-odf/ontology#ImmediatePayoff"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Describe -->
+    <!-- http://purl.org/cross-odf/ontology#Describe -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Describe">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Describe">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mental"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Evaluate -->
+    <!-- http://purl.org/cross-odf/ontology#Evaluate -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Evaluate">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Evaluate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mental"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Filter -->
+    <!-- http://purl.org/cross-odf/ontology#Filter -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Filter">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Filter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Activity"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Find -->
+    <!-- http://purl.org/cross-odf/ontology#Find -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Find">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Find">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mental"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution -->
+    <!-- http://purl.org/cross-odf/ontology#FreeformTextContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#FreeformTextContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#InformationalContribution"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/FreewillContribution -->
+    <!-- http://purl.org/cross-odf/ontology#FreewillContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/FreewillContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
-        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskResultContribution"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#FreewillContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#ContributionType"/>
+        <owl:disjointWith rdf:resource="http://purl.org/cross-odf/ontology#TaskResultContribution"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/GeographicCoordinates -->
+    <!-- http://purl.org/cross-odf/ontology#GeographicCoordinates -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/GeographicCoordinates">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SpatialProperty"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#GeographicCoordinates">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#SpatialProperty"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/GoldQuestionsQualityThreshold -->
+    <!-- http://purl.org/cross-odf/ontology#GoldQuestionsQualityThreshold -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/GoldQuestionsQualityThreshold">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/QualityThreshold"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#GoldQuestionsQualityThreshold">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#QualityThreshold"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/GovernmentOrganization -->
+    <!-- http://purl.org/cross-odf/ontology#GovernmentOrganization -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/GovernmentOrganization">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#GovernmentOrganization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/HumanAbility -->
+    <!-- http://purl.org/cross-odf/ontology#HumanAbility -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#HumanAbility"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/HumanAction -->
+    <!-- http://purl.org/cross-odf/ontology#HumanAction -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#HumanAction"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/HumanTaskType -->
+    <!-- http://purl.org/cross-odf/ontology#HumanTaskType -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#HumanTaskType"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Image -->
+    <!-- http://purl.org/cross-odf/ontology#Image -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Image">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Image">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskRepresentation"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ImmediatePayoff -->
+    <!-- http://purl.org/cross-odf/ontology#ImmediatePayoff -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ImmediatePayoff">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ImmediatePayoff">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Monetary"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/IndividualConsumer -->
+    <!-- http://purl.org/cross-odf/ontology#IndividualConsumer -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/IndividualConsumer">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#IndividualConsumer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Consumer"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/InformationalContribution -->
+    <!-- http://purl.org/cross-odf/ontology#InformationalContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/InformationalContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#InformationalContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#ContributionType"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Integrative -->
+    <!-- http://purl.org/cross-odf/ontology#Integrative -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Integrative">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Integrative">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#ContributionProcessingMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/LimitedVocabularyContribution -->
+    <!-- http://purl.org/cross-odf/ontology#LimitedVocabularyContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/LimitedVocabularyContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#LimitedVocabularyContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#InformationalContribution"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Linguistic -->
+    <!-- http://purl.org/cross-odf/ontology#Linguistic -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Linguistic">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Linguistic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#HumanAbility"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Match -->
+    <!-- http://purl.org/cross-odf/ontology#Match -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Match">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Match">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mental"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Mechanism -->
+    <!-- http://purl.org/cross-odf/ontology#Mechanism -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Mechanism"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Mental -->
+    <!-- http://purl.org/cross-odf/ontology#Mental -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Mental">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Mental">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#HumanAction"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Monetary -->
+    <!-- http://purl.org/cross-odf/ontology#Monetary -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Monetary">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/MotivationMechanism"/>
-        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/Nonmonetary"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Monetary">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#MotivationMechanism"/>
+        <owl:disjointWith rdf:resource="http://purl.org/cross-odf/ontology#Nonmonetary"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/MonetaryContribution -->
+    <!-- http://purl.org/cross-odf/ontology#MonetaryContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/MonetaryContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/PhysicalContribution"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#MonetaryContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#PhysicalContribution"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/MotivationMechanism -->
+    <!-- http://purl.org/cross-odf/ontology#MotivationMechanism -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/MotivationMechanism">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#MotivationMechanism">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Nonmonetary -->
+    <!-- http://purl.org/cross-odf/ontology#Nonmonetary -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Nonmonetary">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/MotivationMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Nonmonetary">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#MotivationMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/NumericContribution -->
+    <!-- http://purl.org/cross-odf/ontology#NumericContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/NumericContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#NumericContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#InformationalContribution"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Organization -->
+    <!-- http://purl.org/cross-odf/ontology#Organization -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Organization">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Organization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Consumer"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Physical -->
+    <!-- http://purl.org/cross-odf/ontology#Physical -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Physical">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Physical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#HumanAction"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/PhysicalContribution -->
+    <!-- http://purl.org/cross-odf/ontology#PhysicalContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/PhysicalContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#PhysicalContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#ContributionType"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Problem -->
+    <!-- http://purl.org/cross-odf/ontology#Problem -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Problem"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ProblemDomain -->
+    <!-- http://purl.org/cross-odf/ontology#ProblemDomain -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ProblemDomain"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ProblemDomain"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/PullDistribution -->
+    <!-- http://purl.org/cross-odf/ontology#PullDistribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/PullDistribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#PullDistribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskDistributionMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/PushDistribution -->
+    <!-- http://purl.org/cross-odf/ontology#PushDistribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/PushDistribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#PushDistribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskDistributionMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/QualificationTests -->
+    <!-- http://purl.org/cross-odf/ontology#QualificationTests -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/QualificationTests">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#QualificationTests">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#AdmissionMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/QualityThreshold -->
+    <!-- http://purl.org/cross-odf/ontology#QualityThreshold -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/QualityThreshold">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#QualityThreshold">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#AdmissionMechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/RatingSystem -->
+    <!-- http://purl.org/cross-odf/ontology#RatingSystem -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/RatingSystem">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SocialPayoff"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#RatingSystem">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#SocialPayoff"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/RealCurrency -->
+    <!-- http://purl.org/cross-odf/ontology#RealCurrency -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/RealCurrency">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
-        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/VirtualCurrency"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#RealCurrency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Monetary"/>
+        <owl:disjointWith rdf:resource="http://purl.org/cross-odf/ontology#VirtualCurrency"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ScientificOrganization -->
+    <!-- http://purl.org/cross-odf/ontology#ScientificOrganization -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ScientificOrganization">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#ScientificOrganization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Search -->
+    <!-- http://purl.org/cross-odf/ontology#Search -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Search">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Search">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Activity"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Select -->
+    <!-- http://purl.org/cross-odf/ontology#Select -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Select">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Select">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mental"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/SocialPayoff -->
+    <!-- http://purl.org/cross-odf/ontology#SocialPayoff -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/SocialPayoff">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Nonmonetary"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#SocialPayoff">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Nonmonetary"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Society -->
+    <!-- http://purl.org/cross-odf/ontology#Society -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Society">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Society">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Consumer"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/SpatialProperty -->
+    <!-- http://purl.org/cross-odf/ontology#SpatialProperty -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/SpatialProperty">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskProperty"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#SpatialProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskProperty"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism -->
+    <!-- http://purl.org/cross-odf/ontology#TaskDistributionMechanism -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#TaskDistributionMechanism">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Mechanism"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/TaskProperty -->
+    <!-- http://purl.org/cross-odf/ontology#TaskProperty -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskProperty"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#TaskProperty"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/TaskRepresentation -->
+    <!-- http://purl.org/cross-odf/ontology#TaskRepresentation -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#TaskRepresentation"/>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/TaskResultContribution -->
+    <!-- http://purl.org/cross-odf/ontology#TaskResultContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskResultContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#TaskResultContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#ContributionType"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Text -->
+    <!-- http://purl.org/cross-odf/ontology#Text -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Text">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Text">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskRepresentation"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Video -->
+    <!-- http://purl.org/cross-odf/ontology#Video -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Video">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#Video">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#TaskRepresentation"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/VirtualCurrency -->
+    <!-- http://purl.org/cross-odf/ontology#VirtualCurrency -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/VirtualCurrency">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#VirtualCurrency">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#Monetary"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/VisualProcessing -->
+    <!-- http://purl.org/cross-odf/ontology#VisualProcessing -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/VisualProcessing">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#VisualProcessing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#HumanAbility"/>
     </owl:Class>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/VoteContribution -->
+    <!-- http://purl.org/cross-odf/ontology#VoteContribution -->
 
-    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/VoteContribution">
-        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    <owl:Class rdf:about="http://purl.org/cross-odf/ontology#VoteContribution">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cross-odf/ontology#InformationalContribution"/>
     </owl:Class>
     
 
@@ -762,14 +762,14 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ArticleContribution -->
+    <!-- http://purl.org/cross-odf/ontology#ArticleContribution -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/ArticleContribution">
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#ArticleContribution">
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution"/>
-                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreewillContribution"/>
+                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#FreeformTextContribution"/>
+                    <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#FreewillContribution"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
@@ -777,70 +777,70 @@
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Bibtaggers -->
+    <!-- http://purl.org/cross-odf/ontology#Bibtaggers -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/Bibtaggers">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#Bibtaggers">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CCLogoCampaign -->
+    <!-- http://purl.org/cross-odf/ontology#CCLogoCampaign -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/CCLogoCampaign">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#CCLogoCampaign">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/CocaColaCompany -->
+    <!-- http://purl.org/cross-odf/ontology#CocaColaCompany -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/CocaColaCompany">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/BusinessOrganization"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#CocaColaCompany">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#BusinessOrganization"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/GenericCollect -->
+    <!-- http://purl.org/cross-odf/ontology#GenericCollect -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/GenericCollect">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Collect"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericCollect">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Collect"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/ProblemIndividual -->
+    <!-- http://purl.org/cross-odf/ontology#ProblemIndividual -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/ProblemIndividual">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
-        <hasConsumer rdf:resource="http://cais.iias.spb.su/ontologies/cross/CocaColaCompany"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#ProblemIndividual">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
+        <hasConsumer rdf:resource="http://purl.org/cross-odf/ontology#CocaColaCompany"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Runners -->
+    <!-- http://purl.org/cross-odf/ontology#Runners -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/Runners">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Society"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#Runners">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Society"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/TaggingBibNumbers -->
+    <!-- http://purl.org/cross-odf/ontology#TaggingBibNumbers -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/TaggingBibNumbers">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
-        <hasConsumer rdf:resource="http://cais.iias.spb.su/ontologies/cross/Runners"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#TaggingBibNumbers">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
+        <hasConsumer rdf:resource="http://purl.org/cross-odf/ontology#Runners"/>
         <rdfs:comment>A problem of tagging photos of runners with bib numbers located on them.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cais.iias.spb.su/ontologies/cross/Wikipedia -->
+    <!-- http://purl.org/cross-odf/ontology#Wikipedia -->
 
-    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/Wikipedia">
-        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
-        <definesContributionType rdf:resource="http://cais.iias.spb.su/ontologies/cross/ArticleContribution"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#Wikipedia">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
+        <definesContributionType rdf:resource="http://purl.org/cross-odf/ontology#ArticleContribution"/>
     </owl:NamedIndividual>
     
 
@@ -856,9 +856,9 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/IndividualConsumer"/>
-            <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/Organization"/>
-            <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/Society"/>
+            <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#IndividualConsumer"/>
+            <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#Organization"/>
+            <rdf:Description rdf:about="http://purl.org/cross-odf/ontology#Society"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
