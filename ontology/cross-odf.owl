@@ -1,0 +1,869 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cais.iias.spb.su/ontologies/cross/"
+     xml:base="http://cais.iias.spb.su/ontologies/cross/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cross="http://cais.iias.spb.su/ontologies/cross/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://cais.iias.spb.su/ontologies/cross/">
+        <owl:versionIRI rdf:resource="http://cais.iias.spb.su/ontologies/cross/1.0.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1.0.0</owl:versionInfo>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology to describe main distinguishing features of crowd-based applications. Primary goal of the ontology is to annotate scientific publications with the classes introduced by this ontology to enable semantic search and simple analytical procedures, allowing, in the long run to integrate research in the area of crowd computing.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/addresses -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/addresses">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/causedByTaskType -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/causedByTaskType">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskResultContribution"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/definesContributionType -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/definesContributionType">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/definesProperty -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/definesProperty">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/definesTaskType -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/definesTaskType">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/exploitsAbility -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/exploitsAbility">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/hasConsumer -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/hasConsumer">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/hasDomain -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/hasDomain">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/ProblemDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/hasRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/hasRepresentation">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/implements -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/implements">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/problemActivity -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/problemActivity">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/requiresAction -->
+
+    <owl:ObjectProperty rdf:about="http://cais.iias.spb.su/ontologies/cross/requiresAction">
+        <rdfs:domain rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+        <rdfs:range rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Activity -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Audial -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Audial">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Audio -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Audio">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/BadgeSystem -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/BadgeSystem">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SocialPayoff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/BusinessOrganization -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/BusinessOrganization">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Collect -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Collect">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CommonSense -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CommonSense">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Compare -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Compare">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Competitive -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Competitive">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ConsensusQualityThreshold -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ConsensusQualityThreshold">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/QualityThreshold"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Consumer -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ContributionType -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ContributorRankings -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ContributorRankings">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SocialPayoff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdcreationApplication -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdcreationApplication">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesContributionType"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution"/>
+                                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreewillContribution"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdfundingApplication -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdfundingApplication">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesContributionType"/>
+                        <owl:someValuesFrom rdf:resource="http://cais.iias.spb.su/ontologies/cross/MonetaryContribution"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CrowdsensingApplication -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdsensingApplication">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesTaskType"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://cais.iias.spb.su/ontologies/cross/definesProperty"/>
+                                <owl:someValuesFrom rdf:resource="http://cais.iias.spb.su/ontologies/cross/SpatialProperty"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/DelayedPayoff -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/DelayedPayoff">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
+        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/ImmediatePayoff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Describe -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Describe">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Evaluate -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Evaluate">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Filter -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Filter">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Find -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Find">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/FreewillContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/FreewillContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskResultContribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/GeographicCoordinates -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/GeographicCoordinates">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SpatialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/GoldQuestionsQualityThreshold -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/GoldQuestionsQualityThreshold">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/QualityThreshold"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/GovernmentOrganization -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/GovernmentOrganization">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/HumanAbility -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/HumanAction -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/HumanTaskType -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/HumanTaskType"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Image -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Image">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ImmediatePayoff -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ImmediatePayoff">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/IndividualConsumer -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/IndividualConsumer">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/InformationalContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/InformationalContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Integrative -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Integrative">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionProcessingMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/LimitedVocabularyContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/LimitedVocabularyContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Linguistic -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Linguistic">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Match -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Match">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Mechanism -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Mental -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Mental">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Monetary -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Monetary">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/MotivationMechanism"/>
+        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/Nonmonetary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/MonetaryContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/MonetaryContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/PhysicalContribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/MotivationMechanism -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/MotivationMechanism">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Nonmonetary -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Nonmonetary">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/MotivationMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/NumericContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/NumericContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Organization -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Organization">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Physical -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Physical">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/PhysicalContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/PhysicalContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Problem -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ProblemDomain -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ProblemDomain"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/PullDistribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/PullDistribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/PushDistribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/PushDistribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/QualificationTests -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/QualificationTests">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/QualityThreshold -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/QualityThreshold">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/AdmissionMechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/RatingSystem -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/RatingSystem">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/SocialPayoff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/RealCurrency -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/RealCurrency">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
+        <owl:disjointWith rdf:resource="http://cais.iias.spb.su/ontologies/cross/VirtualCurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ScientificOrganization -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/ScientificOrganization">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Search -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Search">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Select -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Select">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mental"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/SocialPayoff -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/SocialPayoff">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Nonmonetary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Society -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Society">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Consumer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/SpatialProperty -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/SpatialProperty">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskDistributionMechanism">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/TaskProperty -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskProperty"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/TaskRepresentation -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/TaskResultContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/TaskResultContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/ContributionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Text -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Text">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Video -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/Video">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/TaskRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/VirtualCurrency -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/VirtualCurrency">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/Monetary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/VisualProcessing -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/VisualProcessing">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/HumanAbility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/VoteContribution -->
+
+    <owl:Class rdf:about="http://cais.iias.spb.su/ontologies/cross/VoteContribution">
+        <rdfs:subClassOf rdf:resource="http://cais.iias.spb.su/ontologies/cross/InformationalContribution"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ArticleContribution -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/ArticleContribution">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreeformTextContribution"/>
+                    <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/FreewillContribution"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Bibtaggers -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/Bibtaggers">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CCLogoCampaign -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/CCLogoCampaign">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/CocaColaCompany -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/CocaColaCompany">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/BusinessOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/GenericCollect -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/GenericCollect">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Collect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/ProblemIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/ProblemIndividual">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+        <hasConsumer rdf:resource="http://cais.iias.spb.su/ontologies/cross/CocaColaCompany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Runners -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/Runners">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Society"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/TaggingBibNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/TaggingBibNumbers">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/Problem"/>
+        <hasConsumer rdf:resource="http://cais.iias.spb.su/ontologies/cross/Runners"/>
+        <rdfs:comment>A problem of tagging photos of runners with bib numbers located on them.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cais.iias.spb.su/ontologies/cross/Wikipedia -->
+
+    <owl:NamedIndividual rdf:about="http://cais.iias.spb.su/ontologies/cross/Wikipedia">
+        <rdf:type rdf:resource="http://cais.iias.spb.su/ontologies/cross/CrowdBasedApplication"/>
+        <definesContributionType rdf:resource="http://cais.iias.spb.su/ontologies/cross/ArticleContribution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/IndividualConsumer"/>
+            <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/Organization"/>
+            <rdf:Description rdf:about="http://cais.iias.spb.su/ontologies/cross/Society"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
