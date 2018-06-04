@@ -781,6 +781,34 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#Bibtaggers">
         <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#CrowdBasedApplication"/>
+        <addresses rdf:resource="http://purl.org/cross-odf/ontology#TaggingBibNumbers"/>
+        <definesContributionType rdf:resource="http://purl.org/cross-odf/ontology#BibtaggersContributionType"/>
+        <definesTaskType rdf:resource="http://purl.org/cross-odf/ontology#BibtaggersTaskType"/>
+        <implements rdf:resource="http://purl.org/cross-odf/ontology#GenericGoldQuestionsQualityThreshold"/>
+        <implements rdf:resource="http://purl.org/cross-odf/ontology#GenericIntegrative"/>
+        <implements rdf:resource="http://purl.org/cross-odf/ontology#GenericNonmonetary"/>
+        <implements rdf:resource="http://purl.org/cross-odf/ontology#GenericPush"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#BibtaggersContributionType -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#BibtaggersContributionType">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#LimitedVocabularyContribution"/>
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#TaskResultContribution"/>
+        <causedByTaskType rdf:resource="http://purl.org/cross-odf/ontology#BibtaggersTaskType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#BibtaggersTaskType -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#BibtaggersTaskType">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#HumanTaskType"/>
+        <exploitsAbility rdf:resource="http://purl.org/cross-odf/ontology#VisualNumberRecognition"/>
+        <hasRepresentation rdf:resource="http://purl.org/cross-odf/ontology#GenericImage"/>
+        <requiresAction rdf:resource="http://purl.org/cross-odf/ontology#GenericDescribe"/>
     </owl:NamedIndividual>
     
 
@@ -809,6 +837,54 @@
     
 
 
+    <!-- http://purl.org/cross-odf/ontology#GenericDescribe -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericDescribe">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Describe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#GenericGoldQuestionsQualityThreshold -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericGoldQuestionsQualityThreshold">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#GoldQuestionsQualityThreshold"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#GenericImage -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericImage">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#GenericIntegrative -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericIntegrative">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Integrative"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#GenericNonmonetary -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericNonmonetary">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Nonmonetary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#GenericPush -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#GenericPush">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#PushDistribution"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/cross-odf/ontology#ProblemIndividual -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#ProblemIndividual">
@@ -826,12 +902,29 @@
     
 
 
+    <!-- http://purl.org/cross-odf/ontology#SetOfNumericTags -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#SetOfNumericTags">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#LimitedVocabularyContribution"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/cross-odf/ontology#TaggingBibNumbers -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#TaggingBibNumbers">
         <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#Problem"/>
         <hasConsumer rdf:resource="http://purl.org/cross-odf/ontology#Runners"/>
+        <problemActivity rdf:resource="http://purl.org/cross-odf/ontology#GenericCollect"/>
         <rdfs:comment>A problem of tagging photos of runners with bib numbers located on them.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cross-odf/ontology#VisualNumberRecognition -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cross-odf/ontology#VisualNumberRecognition">
+        <rdf:type rdf:resource="http://purl.org/cross-odf/ontology#VisualProcessing"/>
     </owl:NamedIndividual>
     
 
